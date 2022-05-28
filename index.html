@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>C103</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  </head>
+  <body background="OIP.jfif" style="color: white">
+    <center>
+    <hr><h1>FACE RECOGNITION WEB APP</h1><hr>
+    <p style="font-size: 20px;">This model is trained to identify the following objects:</p>
+    <h2 class="btn btn-primary">Me</h2><br>
+    <h2 class="btn btn-danger">Not me</h2><br><br>
+    <div id="camera"></div><br><br>
+    <button onclick="takeSnapshot()" class="btn btn-success">Capture Image</button><br><br><br>
+    <div class="captured image"></div>
+    <button onclick="identifyImage()" class="btn btn-warning">Identify Image</button><br><br>
+    <p style="font-size: 15px;">Accuracy: <span></span></p>
+    <p style="font-size: 15px;">Captured Image</p>
+    <div class="captured image"></div>
+    </center>
+  </body>
+</html>
